@@ -1,5 +1,5 @@
 /*	
- *	jQuery mmenu 3.3.0
+ *	jQuery mmenu 3.3.1
  *	
  *	Copyright (c) 2013 Fred Heusschen
  *	www.frebsite.nl
@@ -1384,14 +1384,11 @@
 			}, c.transitionDuration
 		);
 
-		if ( $.fn.mmenu.useIphoneAddressbarFix() && $page.data( _d.scrollTop ) > 20 )
-		{
-			window.scrollTo( 0, 1 );
-		}
-
 		//	opening
 		$html.addClass( _c.opening );
 		$m.trigger( _e.opening );
+
+		window.scrollTo( 0, 1 );
 	}
 	function closeMenu( $m, o, c )
 	{
